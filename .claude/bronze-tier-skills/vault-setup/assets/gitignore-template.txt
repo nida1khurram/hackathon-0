@@ -1,0 +1,51 @@
+# AI Employee Vault — .gitignore
+# NEVER commit credentials, sessions, or API tokens
+
+# Environment & secrets
+.env
+.env.*
+*.env
+secrets/
+credentials/
+
+# Google OAuth tokens
+credentials.json
+token.json
+token.pickle
+
+# WhatsApp session (Playwright persistent context)
+whatsapp_session/
+.wwebjs_auth/
+*.session
+
+# Banking credentials
+banking_credentials.json
+bank_tokens/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Node.js (MCP servers)
+node_modules/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Obsidian workspace state (optional — keep if you want to sync workspace)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Large files
+*.mp4
+*.zip
+*.tar.gz
